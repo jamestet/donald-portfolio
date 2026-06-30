@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Donald Thibodeaux — AI Automation Engineer</title>
+<meta name="description" content="I build secure, local-first AI agents and automation for real-world workflows." />
+<style>
+  :root{
+    --bg:#0d0f14; --surface:#161922; --surface-2:#1e222e; --border:#2a2f3d;
+    --text:#e8eaf0; --muted:#9aa3b2; --accent:#6ea8fe; --accent-2:#4ade80;
+    --radius:14px; --max:880px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  header{padding:72px 0 40px;text-align:center}
+  header h1{font-size:clamp(28px,5vw,42px);font-weight:650;letter-spacing:-.02em}
+  header .title{color:var(--accent);font-size:clamp(15px,2.5vw,19px);margin-top:8px;font-weight:500}
+  header p.lede{color:var(--muted);max-width:620px;margin:20px auto 0;font-size:17px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:550;font-size:15px;text-decoration:none;border:1px solid var(--border);transition:.15s}
+  .btn.primary{background:var(--accent);color:#0a0c10;border-color:var(--accent)}
+  .btn.primary:hover{filter:brightness(1.08)}
+  .btn.ghost{color:var(--text)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  section{padding:36px 0;border-top:1px solid var(--border)}
+  .eyebrow{color:var(--accent-2);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  h2{font-size:clamp(22px,3.5vw,30px);font-weight:620;letter-spacing:-.01em;margin:8px 0 4px}
+  .sub{color:var(--muted);font-size:16px;margin-bottom:20px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+  .media{background:var(--surface-2);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:24px;border-bottom:1px solid var(--border)}
+  .media img{width:100%;height:100%;object-fit:cover;display:block}
+  .card-body{padding:22px 24px}
+  .pblock{margin:14px 0}
+  .pblock .lbl{color:var(--accent);font-weight:600;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+  .pblock p{color:var(--text);margin-top:3px}
+  .stack{margin-top:16px;color:var(--muted);font-size:13.5px}
+  .tag{display:inline-block;background:var(--surface-2);border:1px solid var(--border);color:var(--muted);border-radius:99px;padding:3px 11px;font-size:12.5px;margin:4px 6px 0 0}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .skills .tag{color:var(--text)}
+  footer{padding:48px 0 64px;text-align:center;color:var(--muted)}
+  footer a{color:var(--accent);text-decoration:none}
+  .honest{font-size:13px;color:var(--muted);margin-top:10px;font-style:italic}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Donald Thibodeaux</h1>
+    <div class="title">AI Automation Engineer · Multi-Agent Systems</div>
+    <p class="lede">I build secure, local-first AI agents and automation for real-world workflows — systems that reason locally, execute inside strict safety boundaries, and turn manual operations into reliable pipelines.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#demo">Watch the 60-second demo</a>
+      <a class="btn ghost" href="mailto:donaldsjobhunt@yahoo.com">Let's talk</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="godmode">
+    <div class="eyebrow">The orchestrator</div>
+    <h2>GodModeAgent — "Layla Operator"</h2>
+    <div class="sub">A local, autonomous multi-agent operator with voice modes and read-only safety built in.</div>
+    <div class="card">
+      <div class="media">
+        <!-- Replace with a real screenshot or GIF: assets/godmode-demo.gif -->
+        <span>Add a screenshot/GIF here → <code>assets/godmode-demo.gif</code><br>(the dashboard routing a task to a worker mode while the READ_ONLY badge is visible)</span>
+      </div>
+      <div class="card-body">
+        <div class="pblock"><div class="lbl">The problem</div><p>Most AI agents are either over-constrained chatbots or unconstrained security risks.</p></div>
+        <div class="pblock"><div class="lbl">The build</div><p>A local multi-agent system: a main operator monitors state and <strong>asynchronously dispatches</strong> high-compute work to specialized worker modes (Research Assistant, Content Strategist) — without blocking the UI or telemetry.</p></div>
+        <div class="pblock"><div class="lbl">Safety by design</div><p>Strict <strong>READ_ONLY</strong> boundary — no execution, no wallet signing, no writes outside sandboxed drafts — with a persisted HALT kill-switch and a SIEM-style event log. A SQLite prediction/audit ledger (in progress) tracks recommendations and provenance.</p></div>
+        <div class="stack">TypeScript · Express · React · better-sqlite3 · local LLM</div>
+        <div><span class="tag">working prototype</span><span class="tag">live demo</span><span class="tag">read-only safety</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wepoxy">
+    <div class="eyebrow">The automation engine</div>
+    <h2>WEpoxy — AI voice receptionist</h2>
+    <div class="sub">Inbound calls become structured leads with zero manual handling.</div>
+    <div class="card">
+      <div class="media">
+        <!-- Replace with a real screenshot: assets/wepoxy-pipeline.png -->
+        <span>Add a screenshot here → <code>assets/wepoxy-pipeline.png</code><br>(a captured lead row + the owner alert it fired)</span>
+      </div>
+      <div class="card-body">
+        <div class="pblock"><div class="lbl">The build</div><p>A Python webhook ingests call-end reports from a Vapi voice agent, parses the lead, logs it to a CRM/CSV, and fires <strong>real-time multi-channel alerts</strong> (email, SMS, Telegram).</p></div>
+        <div class="pblock"><div class="lbl">Deployed &amp; compliant</div><p>Runs behind a Cloudflare tunnel with environment-gated integrations; <strong>inbound-only by design</strong> for TCPA compliance. Templatized to resell across contractor verticals.</p></div>
+        <div class="stack">Python · Vapi · Cloudflare Tunnel · SMTP / Twilio / Telegram</div>
+        <div><span class="tag">tested end-to-end</span><span class="tag">live demo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="eyebrow">Toolkit</div>
+    <h2>What I work with</h2>
+    <div class="skills">
+      <span class="tag">Multi-agent orchestration</span><span class="tag">Async task routing</span>
+      <span class="tag">Local LLM (Ollama)</span><span class="tag">Voice AI / Vapi</span>
+      <span class="tag">Webhooks &amp; automation</span><span class="tag">Read-only sandboxing</span>
+      <span class="tag">SQLite / state &amp; audit</span><span class="tag">Python</span>
+      <span class="tag">TypeScript</span><span class="tag">Node / Express</span><span class="tag">React</span><span class="tag">REST APIs</span>
+    </div>
+  </section>
+
+  <section id="demo">
+    <div class="eyebrow">See it run</div>
+    <h2>60-second demo</h2>
+    <div class="sub">Watch the operator route a task and the receptionist capture a live lead.</div>
+    <div class="card"><div class="media">
+      <!-- Embed a video/GIF or link to one (YouTube unlisted / Loom): -->
+      <span>Drop your demo video or GIF here, or link it from the button below.</span>
+    </div></div>
+    <div class="cta-row" style="justify-content:flex-start;margin-top:20px">
+      <a class="btn primary" href="[demo-video-link]">Watch the demo</a>
+      <a class="btn ghost" href="mailto:donaldsjobhunt@yahoo.com">Let's talk about automating your workflows</a>
+    </div>
+    <p class="honest">Honest framing: these are working prototypes I built and tested solo — local-first, with live demos. Not enterprise-scale production.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Donald Thibodeaux · Phoenix, AZ<br>
+    <a href="mailto:donaldsjobhunt@yahoo.com">donaldsjobhunt@yahoo.com</a> · <a href="https://www.linkedin.com/in/donald-thibodeaux-a46a9517a/">LinkedIn</a> · <a href="[GitHub URL]">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>
