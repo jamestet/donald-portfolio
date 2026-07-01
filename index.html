@@ -82,9 +82,10 @@
     <h2>WEpoxy — AI voice receptionist</h2>
     <div class="sub">Inbound calls become structured leads with zero manual handling.</div>
     <div class="card">
-      <div class="media">
-        <!-- Replace with a real screenshot: assets/wepoxy-pipeline.png -->
-        <span>Add a screenshot here → <code>assets/wepoxy-pipeline.png</code><br>(a captured lead row + the owner alert it fired)</span>
+      <div class="media" style="aspect-ratio:auto;padding:0">
+        <a href="assets/wepoxy-pipeline.png" target="_blank" style="display:block;width:100%">
+          <img src="assets/wepoxy-pipeline.png" alt="WEpoxy AI receptionist pipeline proof: webhook console firing a new-lead owner alert, and the captured lead row logged to the CSV lead log" style="height:auto;max-height:560px;object-fit:cover;object-position:top">
+        </a>
       </div>
       <div class="card-body">
         <div class="pblock"><div class="lbl">The build</div><p>A Python webhook ingests call-end reports from a Vapi voice agent, parses the lead, logs it to a CRM/CSV, and fires <strong>real-time multi-channel alerts</strong> (email, SMS, Telegram).</p></div>
